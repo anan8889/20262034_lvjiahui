@@ -27,23 +27,23 @@ Complex::~Complex() {
 
 // TODO(4): 复数相加
 Complex Complex::operator+(const Complex& other) const {
-    return Complex(real+other.real,imag+other.imag);
+    return Complex(real + other.real,imag + other.imag);
 }
 
 // TODO(5): 复数相减
 Complex Complex::operator-(const Complex& other) const {
-    return Complex(real-other.real,imag-other.imag);
+    return Complex(real - other.real,imag - other.imag);
 }
 
 // TODO(6): 按约定格式打印
 void Complex::print() const {
-    if(imag>=0)
+    if(imag >= 0)
 {
-  cout<<real<<"+"<<imag<<"i"<<endl;
+  cout << real << " + " << imag << "i" << endl;
 }
 else
 {
-  cout<<real<<"-"<<-imag<<"i"<<endl;
+  cout << real << " - " << -imag << "i" << endl;
 }
 }
 
